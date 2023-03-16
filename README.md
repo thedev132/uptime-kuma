@@ -44,9 +44,15 @@ npm install npm -g
 
 git clone https://github.com/thedev132/uptime-kuma.git
 cd uptime-kuma
+npm install 
+npm run build
 
 # Option 1. Try it
-node server/server.js
+node server/server.js 
+
+or 
+
+npm run start
 
 # (Recommended) Option 2. Run in background using PM2
 # Install PM2 if you don't have it: 
