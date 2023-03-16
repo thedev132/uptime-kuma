@@ -205,7 +205,7 @@ let needSetup = false;
             response.redirect(server.basePath + "status/" + uptimeKumaEntryPage.replace("statusPage-", ""));
 
         } else {
-            response.redirect(server.basePath + "/dashboard");
+            response.redirect(server.basePath + "dashboard");
         }
     });
 
