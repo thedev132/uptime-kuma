@@ -74,7 +74,7 @@ class UptimeKumaServer {
         // SSL
         const sslKey = args["ssl-key"] || process.env.UPTIME_KUMA_SSL_KEY || process.env.SSL_KEY || undefined;
         const sslCert = args["ssl-cert"] || process.env.UPTIME_KUMA_SSL_CERT || process.env.SSL_CERT || undefined;
-        let basePathEnv = "/kuma/";
+        let basePathEnv = process.env.BASE_PATH || "/kuma/";
 
         if (!basePathEnv.startsWith("/")) {
             basePathEnv = "/" + basePathEnv;
